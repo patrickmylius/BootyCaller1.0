@@ -2,13 +2,11 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.text.Text;
-import javafx.stage.Window;
 
 
 public class Controller {
@@ -45,6 +43,11 @@ public class Controller {
     //create method for handling click generateButton event
     @FXML
     protected void handleGenerateButtonAction(ActionEvent event) {
-        System.out.println(nameField.getText());
+        switch (specField.getText().toLowerCase()) {
+            case "unholy":
+                Image unholy = new Image("resources/" + "Unholy.png");
+                image.setImage(unholy);
+        }
+
     }
 }
