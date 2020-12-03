@@ -8,11 +8,11 @@
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="15">
 
     <Label fx:id="fakeLabel0" text=""
-           GridPane.columnIndex="0" GridPane.rowIndex="0" />
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
     <Label fx:id="fakeLabel1" text=""
-           GridPane.columnIndex="0" GridPane.rowIndex="1" />
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <Label fx:id="fakeLabel2" text=""
-           GridPane.columnIndex="0" GridPane.rowIndex="2" />
+           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
     <Label fx:id="nameLabel" text="Name:" styleClass="name"
            GridPane.columnIndex="0" GridPane.rowIndex="6"/>
@@ -29,18 +29,18 @@
     <ChoiceBox fx:id="classChoice" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="7">
         <items>
             <FXCollections fx:factory="observableArrayList">
-                <String fx:value="Warrior" />
-                <String fx:value="Hunter" />
-                <String fx:value="Rogue" />
-                <String fx:value="Mage" />
-                <String fx:value="Paladin" />
-                <String fx:value="Shaman" />
-                <String fx:value="Priest" />
-                <String fx:value="Warlock" />
-                <String fx:value="Monk" />
-                <String fx:value="Demon Hunter" />
-                <String fx:value="Druid" />
-                <String fx:value="Death Knight" />
+                <String fx:value="Warrior"/>
+                <String fx:value="Hunter"/>
+                <String fx:value="Rogue"/>
+                <String fx:value="Mage"/>
+                <String fx:value="Paladin"/>
+                <String fx:value="Shaman"/>
+                <String fx:value="Priest"/>
+                <String fx:value="Warlock"/>
+                <String fx:value="Monk"/>
+                <String fx:value="Demon Hunter"/>
+                <String fx:value="Druid"/>
+                <String fx:value="Death Knight"/>
             </FXCollections>
         </items>
 
@@ -48,9 +48,9 @@
     <ChoiceBox fx:id="specChoice" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="8">
         <items>
             <FXCollections fx:factory="observableArrayList">
-                <String fx:value="Unholy" />
-                <String fx:value="Frost" />
-                <String fx:value="Blood" />
+                <String fx:value="Unholy"/>
+                <String fx:value="Frost"/>
+                <String fx:value="Blood"/>
             </FXCollections>
         </items>
 
