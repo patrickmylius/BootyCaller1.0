@@ -2,42 +2,76 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <GridPane fx:id="grid" styleClass="grid" fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="15" vgap="15">
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="15">
 
-    <Label fx:id="nameLabel" text="Name:" styleClass="name"
-           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-
-    <Label fx:id="roleLabel" text="Class:" styleClass="class"
+    <Label fx:id="fakeLabel0" text=""
+           GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Label fx:id="fakeLabel1" text=""
+           GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label fx:id="fakeLabel2" text=""
            GridPane.columnIndex="0" GridPane.rowIndex="2" />
 
+    <Label fx:id="nameLabel" text="Name:" styleClass="name"
+           GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+
+    <Label fx:id="roleLabel" text="Class:" styleClass="class"
+           GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+
     <Label fx:id="specLabel" text="Specialization:" styleClass="spec"
-           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+           GridPane.columnIndex="0" GridPane.rowIndex="8"/>
 
     <TextField fx:id="nameField"
-               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+               GridPane.columnIndex="1" GridPane.rowIndex="6"/>
 
-    <TextField fx:id="roleField"
-            GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-    <TextField fx:id="specField"
-            GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <ChoiceBox fx:id="classChoice" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Warrior" />
+                <String fx:value="Hunter" />
+                <String fx:value="Rogue" />
+                <String fx:value="Mage" />
+                <String fx:value="Paladin" />
+                <String fx:value="Shaman" />
+                <String fx:value="Priest" />
+                <String fx:value="Warlock" />
+                <String fx:value="Monk" />
+                <String fx:value="Demon Hunter" />
+                <String fx:value="Druid" />
+                <String fx:value="Death Knight" />
+            </FXCollections>
+        </items>
+
+    </ChoiceBox>
+    <ChoiceBox fx:id="specChoice" prefWidth="320" GridPane.columnIndex="1" GridPane.rowIndex="8">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Unholy" />
+                <String fx:value="Frost" />
+                <String fx:value="Blood" />
+            </FXCollections>
+        </items>
+
+    </ChoiceBox>
 
     <HBox spacing="10" alignment="bottom_right"
-          GridPane.columnIndex="1" GridPane.rowIndex="4">
+          GridPane.columnIndex="1" GridPane.rowIndex="9">
         <Button text="Generate"
                 onAction="#handleGenerateButtonAction"/>
         <Button text="Clear"
                 onAction="#handleClearButtonAction"/>
     </HBox>
 
-    <HBox alignment="BOTTOM_CENTER"
-          GridPane.columnIndex="1" GridPane.rowIndex="5">
-        <ImageView fx:id="image"  fitWidth="-Infinity" fitHeight="-Infinity" pickOnBounds="true" preserveRatio="true">
+    <HBox alignment="BOTTOM_CENTER" prefHeight="160" prefWidth="320"
+          GridPane.columnIndex="1" GridPane.rowIndex="10">
+        <ImageView fx:id="image" fitWidth="-Infinity" fitHeight="-Infinity">
         </ImageView>
 
     </HBox>
     <stylesheets>
-        <URL value="@../resources/style.css" />
+        <URL value="@../resources/style.css"/>
     </stylesheets>
 
 </GridPane>
