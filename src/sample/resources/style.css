@@ -1,0 +1,21 @@
+.grid {
+    -fx-background-image: url('background.png');
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-border-color: red;
+    -fx-background-size: cover;
+}
+
+.name{
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto Thin";
+}
+.class{
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto Thin";
+}
+.spec {
+    -fx-text-fill: white;
+    -fx-font-family: "Roboto Thin";
+
+}
