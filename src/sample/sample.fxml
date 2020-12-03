@@ -9,34 +9,36 @@
 <GridPane fx:id="grid" styleClass="grid" fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="15" vgap="15">
 
-    <Label fx:id="name" text="Name:" styleClass="name"
+    <Label fx:id="nameLabel" text="Name:" styleClass="name"
            GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-    <Label fx:id="class" text="Class:" styleClass="class"
+    <Label fx:id="roleLabel" text="Class:" styleClass="class"
            GridPane.columnIndex="0" GridPane.rowIndex="2" />
 
-    <TextField
-            GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-
-    <Label fx:id="spec" text="Specialization:" styleClass="spec"
+    <Label fx:id="specLabel" text="Specialization:" styleClass="spec"
            GridPane.columnIndex="0" GridPane.rowIndex="3"/>
 
-    <TextField
+    <TextField fx:id="nameField"
+               GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <TextField fx:id="roleField"
             GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-    <TextField
+    <TextField fx:id="specField"
             GridPane.columnIndex="1" GridPane.rowIndex="3"/>
 
     <HBox spacing="10" alignment="bottom_right"
           GridPane.columnIndex="1" GridPane.rowIndex="4">
         <Button text="Generate"
-                onAction="#handleSubmitButtonAction"/>
+                onAction="#handleGenerateButtonAction"/>
+        <Button text="Clear"
+                onAction="#handleClearButtonAction"/>
     </HBox>
 
     <Text fx:id="actiontarget"
           GridPane.columnIndex="1" GridPane.rowIndex="6"/>
 
     <stylesheets>
-        <URL value="@resources/style.css" />
+        <URL value="@../resources/style.css" />
     </stylesheets>
 
 </GridPane>
