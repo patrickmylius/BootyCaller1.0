@@ -9,6 +9,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class Controller {
     @FXML
@@ -37,6 +40,7 @@ public class Controller {
     //create method for handling clickClearButton event
     @FXML
     protected void handleClearButtonAction(ActionEvent event) {
+        nameField.setText(null);
         image.setImage(null);
     }
 
@@ -303,9 +307,21 @@ public class Controller {
                     case "guardian":
                         Image guardian = new Image("resources/GuardianDruid.png");
                         image.setImage(guardian);
+                        break;
                 }
-                break;
+        }
+        try {
+            FileWriter fileWriter = new FileWriter("nameLog.txt", true);
+            String name = nameField.getText();
+            fileWriter.write("Name: " + name + " | " + "Class: " + userClass + " | " + "Specialization: " + userSpec + "\n");
+            fileWriter.close();
+            System.out.println("Succesfully saved user name..");
+
+        } catch (IOException e) {
+            System.out.println("Error occured, save failed");
+            e.printStackTrace();
         }
 
     }
+
 }
