@@ -14,19 +14,17 @@ import java.io.IOException;
 
 
 public class Controller {
+    //FXML Vars set.
     @FXML
     private ImageView image;
-
     @FXML
     private Label nameLabel;
     @FXML
     private TextField nameField;
-
     @FXML
     private Label roleLabel;
     @FXML
     private ChoiceBox classChoice;
-
     @FXML
     private Label specLabel;
     @FXML
@@ -44,10 +42,11 @@ public class Controller {
         image.setImage(null);
     }
 
+    //Creating method for handling specValues from ChoiceBox
     @FXML
     protected void handleSpecValues(ActionEvent event) {
-        String userClass = (String) classChoice.getValue();
-        System.out.println("Class Choice Log: " + classChoice.getValue());
+        String userClass = (String) classChoice.getValue(); //String casting Spec choiceBox value
+        //Checking userClass choicebox value with all cases within.
         switch (userClass.toLowerCase()) {
             case "death knight":
                 specChoice.getItems().clear();
@@ -101,12 +100,12 @@ public class Controller {
 
     }
 
-    //create method for handling click generateButton event
+    //Creating method for handling click generateButton event
     @FXML
     protected void handleGenerateButtonAction(ActionEvent event) {
-        String userClass = (String) classChoice.getValue();
-        String userSpec = (String) specChoice.getValue();
-
+        String userClass = (String) classChoice.getValue();//String casting class ChoiceBox value
+        String userSpec = (String) specChoice.getValue();//String casting spec ChoiceBox value
+        //Checking class choiceBox value with all cases within
         switch (userClass.toLowerCase()) {
             //CLASS: DEATH KNIGHT
             case "death knight":
@@ -310,6 +309,7 @@ public class Controller {
                         break;
                 }
         }
+        //Try catch: Creating new fileWriter logging Name, Class and Spec choice to userLog.txt
         try {
             FileWriter fileWriter = new FileWriter("userLog.txt", true);
             String name = nameField.getText();

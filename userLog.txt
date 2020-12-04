@@ -1,0 +1,4 @@
+Name: Covidz | Class: Death Knight | Specialization: Frost
+Name: Covidz | Class: Death Knight | Specialization: Unholy
+Name: Covidz | Class: Death Knight | Specialization: Blood
+
