@@ -2,3 +2,33 @@ Name: Covidz | Class: Death Knight | Specialization: Frost
 Name: Covidz | Class: Death Knight | Specialization: Unholy
 Name: Covidz | Class: Death Knight | Specialization: Blood
 
+Name: Zanchi | Class: Monk | Specialization: Mistweaver
+Name: Mylius | Class: Priest | Specialization: Discipline
+Name: Djros | Class: Priest | Specialization: Holy
+Name: Mylius | Class: Priest | Specialization: Shadow
+Name: Zanchi | Class: Monk | Specialization: Brewmaster
+Name: Zanchi | Class: Monk | Specialization: Windwalker
+Name: Bestnaked | Class: Warrior | Specialization: Arms
+Name: Bestnaked | Class: Warrior | Specialization: Fury
+Name: Bestnaked | Class: Warrior | Specialization: Protection
+Name: Rossilqt | Class: Hunter | Specialization: Beast Mastery
+Name: Rossilqt | Class: Hunter | Specialization: Markmanship
+Name: Rossilqt | Class: Hunter | Specialization: Survival
+Name: Polymort | Class: Mage | Specialization: Frost
+Name: Polymort | Class: Mage | Specialization: Fire
+Name: Polymort | Class: Mage | Specialization: Arcane
+Name: Bubblejihn | Class: Paladin | Specialization: Holy
+Name: Bubblejihn | Class: Paladin | Specialization: Protection
+Name: Bubblejihn | Class: Paladin | Specialization: Retribution
+Name: Rolferren | Class: Shaman | Specialization: Restoration
+Name: Rolferren | Class: Shaman | Specialization: Elemental
+Name: Rolferren | Class: Shaman | Specialization: Enhancement
+Name: Maxpeps | Class: Warlock | Specialization: Demonology
+Name: Maxpeps | Class: Warlock | Specialization: Affliction
+Name: Maxpeps | Class: Warlock | Specialization: Destruction
+Name: Torment | Class: Demon Hunter | Specialization: Havoc
+Name: Torment | Class: Demon Hunter | Specialization: Vengeance
+Name: Moinlander | Class: Druid | Specialization: Feral
+Name: Moinlander | Class: Druid | Specialization: Balance
+Name: Moinlander | Class: Druid | Specialization: Restoration
+Name: Moinlander | Class: Druid | Specialization: Guardian
