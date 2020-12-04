@@ -40,7 +40,7 @@ public class Controller {
     //create method for handling clickClearButton event
     @FXML
     protected void handleClearButtonAction(ActionEvent event) {
-        nameField.setText(null);
+        nameField.clear();
         image.setImage(null);
     }
 
@@ -144,16 +144,16 @@ public class Controller {
             case "rogue":
                 switch (userSpec.toLowerCase()) {
                     case "assasination":
-                        Image unholy = new Image("resources/AssaRogue.png");
-                        image.setImage(unholy);
+                        Image assa = new Image("resources/AssaRogue.png");
+                        image.setImage(assa);
                         break;
                     case "subtlety":
-                        Image frost = new Image("resources/SubRogue.png");
-                        image.setImage(frost);
+                        Image subtlety = new Image("resources/SubRogue.png");
+                        image.setImage(subtlety);
                         break;
                     case "outlaw":
-                        Image blood = new Image("resources/OutlawRogue.png");
-                        image.setImage(blood);
+                        Image outlaw = new Image("resources/OutlawRogue.png");
+                        image.setImage(outlaw);
                 }
                 break;
 
@@ -161,16 +161,16 @@ public class Controller {
             case "warrior":
                 switch (userSpec.toLowerCase()) {
                     case "arms":
-                        Image unholy = new Image("resources/ArmsWarrior.png");
-                        image.setImage(unholy);
+                        Image arms = new Image("resources/ArmsWarrior.png");
+                        image.setImage(arms);
                         break;
                     case "fury":
-                        Image frost = new Image("resources/FuryWarrior.png");
-                        image.setImage(frost);
+                        Image fury = new Image("resources/FuryWarrior.png");
+                        image.setImage(fury);
                         break;
                     case "protection":
-                        Image blood = new Image("resources/ProtWarrior.png");
-                        image.setImage(blood);
+                        Image protection = new Image("resources/ProtWarrior.png");
+                        image.setImage(protection);
                 }
                 break;
 
@@ -178,16 +178,16 @@ public class Controller {
             case "hunter":
                 switch (userSpec.toLowerCase()) {
                     case "beast mastery":
-                        Image unholy = new Image("resources/BeastHunter.png");
-                        image.setImage(unholy);
+                        Image bm = new Image("resources/BeastHunter.png");
+                        image.setImage(bm);
                         break;
                     case "markmanship":
-                        Image frost = new Image("resources/MMHunter.png");
-                        image.setImage(frost);
+                        Image markmanship = new Image("resources/MMHunter.png");
+                        image.setImage(markmanship);
                         break;
                     case "survival":
-                        Image blood = new Image("resources/SurvHunter.png");
-                        image.setImage(blood);
+                        Image survival = new Image("resources/SurvHunter.png");
+                        image.setImage(survival);
                 }
                 break;
 
@@ -195,16 +195,16 @@ public class Controller {
             case "paladin":
                 switch (userSpec.toLowerCase()) {
                     case "holy":
-                        Image unholy = new Image("resources/HolyPala.png");
-                        image.setImage(unholy);
+                        Image holy = new Image("resources/HolyPala.png");
+                        image.setImage(holy);
                         break;
                     case "protection":
-                        Image frost = new Image("resources/ProtPala.png");
-                        image.setImage(frost);
+                        Image protection = new Image("resources/ProtPala.png");
+                        image.setImage(protection);
                         break;
                     case "retribution":
-                        Image blood = new Image("resources/RetPala.png");
-                        image.setImage(blood);
+                        Image retribution = new Image("resources/RetPala.png");
+                        image.setImage(retribution);
                 }
                 break;
 
@@ -212,16 +212,16 @@ public class Controller {
             case "shaman":
                 switch (userSpec.toLowerCase()) {
                     case "restoration":
-                        Image unholy = new Image("resources/RestoShaman.png");
-                        image.setImage(unholy);
+                        Image resto = new Image("resources/RestoShaman.png");
+                        image.setImage(resto);
                         break;
                     case "elemental":
-                        Image frost = new Image("resources/EleShaman.png");
-                        image.setImage(frost);
+                        Image elemental = new Image("resources/EleShaman.png");
+                        image.setImage(elemental);
                         break;
                     case "enhancement":
-                        Image blood = new Image("resources/EnhanceShaman.png");
-                        image.setImage(blood);
+                        Image enhancement = new Image("resources/EnhanceShaman.png");
+                        image.setImage(enhancement);
                 }
                 break;
 
@@ -229,16 +229,16 @@ public class Controller {
             case "priest":
                 switch (userSpec.toLowerCase()) {
                     case "shadow":
-                        Image unholy = new Image("resources/ShadowPriest.png");
-                        image.setImage(unholy);
+                        Image shadow = new Image("resources/ShadowPriest.png");
+                        image.setImage(shadow);
                         break;
                     case "holy":
-                        Image frost = new Image("resources/HolyPriest.png");
-                        image.setImage(frost);
+                        Image holy = new Image("resources/HolyPriest.png");
+                        image.setImage(holy);
                         break;
                     case "discipline":
-                        Image blood = new Image("resources/DiscPriest.png");
-                        image.setImage(blood);
+                        Image discipline = new Image("resources/DiscPriest.png");
+                        image.setImage(discipline);
                 }
                 break;
 
@@ -246,16 +246,16 @@ public class Controller {
             case "warlock":
                 switch (userSpec.toLowerCase()) {
                     case "demonology":
-                        Image unholy = new Image("resources/DemoLock.png");
-                        image.setImage(unholy);
+                        Image demonology = new Image("resources/DemoLock.png");
+                        image.setImage(demonology);
                         break;
                     case "affliction":
-                        Image frost = new Image("resources/AffLock.png");
-                        image.setImage(frost);
+                        Image affliction = new Image("resources/AffLock.png");
+                        image.setImage(affliction);
                         break;
                     case "destruction":
-                        Image blood = new Image("resources/DestruLock.png");
-                        image.setImage(blood);
+                        Image destruction = new Image("resources/DestruLock.png");
+                        image.setImage(destruction);
                 }
                 break;
 
@@ -263,16 +263,16 @@ public class Controller {
             case "monk":
                 switch (userSpec.toLowerCase()) {
                     case "mistweaver":
-                        Image unholy = new Image("resources/MistMonk.png");
-                        image.setImage(unholy);
+                        Image mistweaver = new Image("resources/MistMonk.png");
+                        image.setImage(mistweaver);
                         break;
                     case "brewmaster":
-                        Image frost = new Image("resources/BrewMonk.png");
-                        image.setImage(frost);
+                        Image brewmaster = new Image("resources/BrewMonk.png");
+                        image.setImage(brewmaster);
                         break;
                     case "windwalker":
-                        Image blood = new Image("resources/WindMonk.png");
-                        image.setImage(blood);
+                        Image windwalker = new Image("resources/WindMonk.png");
+                        image.setImage(windwalker);
                 }
                 break;
 
@@ -280,12 +280,12 @@ public class Controller {
             case "demon hunter":
                 switch (userSpec.toLowerCase()) {
                     case "havoc":
-                        Image unholy = new Image("resources/HavocDH.png");
-                        image.setImage(unholy);
+                        Image havoc = new Image("resources/HavocDH.png");
+                        image.setImage(havoc);
                         break;
                     case "vengeance":
-                        Image frost = new Image("resources/VengeanceDH.png");
-                        image.setImage(frost);
+                        Image vengeance = new Image("resources/VengeanceDH.png");
+                        image.setImage(vengeance);
                 }
                 break;
 
@@ -293,16 +293,16 @@ public class Controller {
             case "druid":
                 switch (userSpec.toLowerCase()) {
                     case "feral":
-                        Image unholy = new Image("resources/FeralDruid.png");
-                        image.setImage(unholy);
+                        Image feral = new Image("resources/FeralDruid.png");
+                        image.setImage(feral);
                         break;
                     case "balance":
-                        Image frost = new Image("resources/BalanceDruid.png");
-                        image.setImage(frost);
+                        Image balance = new Image("resources/BalanceDruid.png");
+                        image.setImage(balance);
                         break;
                     case "restoration":
-                        Image blood = new Image("resources/RestoDruid.png");
-                        image.setImage(blood);
+                        Image resto = new Image("resources/RestoDruid.png");
+                        image.setImage(resto);
                         break;
                     case "guardian":
                         Image guardian = new Image("resources/GuardianDruid.png");
@@ -311,14 +311,14 @@ public class Controller {
                 }
         }
         try {
-            FileWriter fileWriter = new FileWriter("nameLog.txt", true);
+            FileWriter fileWriter = new FileWriter("userLog.txt", true);
             String name = nameField.getText();
             fileWriter.write("Name: " + name + " | " + "Class: " + userClass + " | " + "Specialization: " + userSpec + "\n");
             fileWriter.close();
-            System.out.println("Succesfully saved user name..");
+            System.out.println("Succesfully saved user data..");
 
         } catch (IOException e) {
-            System.out.println("Error occured, save failed");
+            System.out.println("Error occured, user data save failed");
             e.printStackTrace();
         }
 
