@@ -40,11 +40,19 @@ public class Controller {
         image.setImage(null);
     }
 
+    @FXML
+    protected void handleSpec(ActionEvent event) {
+        System.out.println("logged: " + classChoice.getValue());
+        specChoice.getItems().clear();
+        specChoice.getItems().addAll("Frost", "Fire", "Arcane");
+
+    }
+
     //create method for handling click generateButton event
     @FXML
     protected void handleGenerateButtonAction(ActionEvent event) {
-        String userClass = (String)classChoice.getValue();
-        String userSpec = (String)specChoice.getValue();
+        String userClass = (String) classChoice.getValue();
+        String userSpec = (String) specChoice.getValue();
 
         switch (userClass.toLowerCase()) {
             //CLASS: Death Knight
